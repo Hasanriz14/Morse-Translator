@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sankofa+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/static/index.js" defer></script>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <title>Morse Code Translator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="main-head">
+      <h1>H . ._.. LO , Morse Code!</h1>
+    </div>
+    <hr />
+    <div class="sales-tactic">
+      <p>
+        #&lt;&lt; <br />Are you running away from the authorities and wanna
+        communicate with your gang?<br />
+        Are you worried that you're being hunted and that every message you send
+        is being intercepted? <br />
+        &gt;&gt;#
+      </p>
+      <h3>
+        No need to Worry anymore when you can get your messages translated into
+        MORSE CODE
+      </h3>
+      <p>
+        Well I have Good News for you <br />
+        Authorities are scared of getting Dot Dashed by gangsters, so you better
+        grab this Opportunity
+      </p>
+    </div>
+    <form id="form-get-string" action="/submit" method="post">
+      <label for="get-string">Input to Translate</label><br />
+      <input type="text" name="get-string" id="get-string" /><br />
+      <input type="submit" id="input-submit" /><br />
+    </form>
+    <div id="translate-text">Waiting for Input...</div>
+  </body>
+</html>
